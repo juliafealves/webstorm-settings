@@ -1,0 +1,9 @@
+<templateSet group="Angular Templates">
+  <template name="@controller iife" value="(function(angular){&#10;    &quot;use strict&quot;;&#10;    &#10;    angular&#10;        .module('$moduleName$')&#10;        .controller('$controllerName$Controller', $controllerNameCapitilized$Controller);&#10;    &#10;    $controllerNameCapitilized$Controller.$inject = ['$scope'];&#10;    &#10;    function $controllerNameCapitilized$Controller($scope)&#10;    {&#10;        var $this$ = this;&#10;        $END$&#10;    }&#10;    &#10;})(angular);" description="Add a controller to a module wrapped in an IIFE" toReformat="false" toShortenFQNames="true">
+    <variable name="moduleName" expression="suggestAngularModuleName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="controllerName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controllerNameCapitilized" expression="capitalize(controllerName)" defaultValue="" alwaysStopAt="true" />
+    <variable name="this" expression="enum(&quot;vm&quot;, &quot;_this&quot;, &quot;vm&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+</templateSet>
