@@ -4,6 +4,5 @@
     <variable name="controllerName" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="controllerNameCapitilized" expression="capitalize(controllerName)" defaultValue="" alwaysStopAt="true" />
     <variable name="this" expression="enum(&quot;vm&quot;, &quot;_this&quot;, &quot;vm&quot;)" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
 </templateSet>
